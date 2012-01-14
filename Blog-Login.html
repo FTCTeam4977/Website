@@ -31,12 +31,37 @@
 </STYLE>
 </head>
 <body>
+	<script type="text/javascript">
+	function validateForm()
+	{
+	var x=document.forms["login"]["user"].value;
+	var y=document.forms["login"]["password"].value;
+	if (x==null || x=="")
+	  {
+		if(y==null || y=="")
+		{
+	  		alert("User name and password must be filled out");
+	  		return false;
+		}
+		else
+		{
+			alert("User name must be filled out");
+	  		return false;
+		}
+	  }
+	if (y==null || y=="")
+	  	{
+			alert("password name must be filled out");
+	  		return false;
+		}
+	}
+	</script>
 <div class="cantainer">
 	<div calss="sixteen columns">
 		<center>
 		<h2>Hello!</h2>
-			 <h4>If you got to this page by mistake, click <a href="www.team4977.org">here</a></h4>
-		<form action="Login.php" method="post">
+			 <h4>If you got to this page by mistake, click <a href="http://www.team4977.org">here</a></h4>
+		<form name="login" action="Login.php" method="post" onsubmit="return validateForm()">
 			Username: <input type= "text" name="user"><br>
 			Password: <input type= "password" name="password">
 			<input type="submit">
