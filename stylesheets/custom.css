@@ -1,0 +1,28 @@
+	
+	#Banner
+	{
+		
+		position:fixed;
+		background-color:white;
+	}
+	
+	#bumpDown
+	{
+		padding-top: 220px;
+	}
+	@media screen and (max-width: 800px){
+		#Banner
+		{
+			position:absolute;
+			background-color:white;
+		}
+		
+	}
+	@media screen and (max-height: 380px) {
+		#Banner
+		{
+			position:absolute;
+			background-color:white;
+		}
+		
+	}

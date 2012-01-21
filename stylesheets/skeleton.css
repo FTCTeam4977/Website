@@ -46,6 +46,8 @@
     .container .fourteen.columns                { width: 820px; }
     .container .fifteen.columns                 { width: 880px; }
     .container .sixteen.columns                 { width: 940px; }
+	.container .Banner.columns					{ width:980px;}
+
 
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }
