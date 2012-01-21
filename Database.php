@@ -2,10 +2,6 @@
 $user = $_POST["user"];
 $password = $_POST["password"];
 
-if ( empty($user) || empty($password) )
-	header("Location: Blog-Login.html?error=1");
-
-
 class Database
 {	
 	function __construct()
@@ -31,15 +27,17 @@ class Database
 }
 
 $db = new Database();
-
-$db->check($username, $password)
-$username = $db->users[$user][2]l
+if(!$db->check($user, $password))
+{
+	header("Location: Blog-Login.php?error=1");
+}
+$username = $db->users[$user][2];
 
 ?>
 <html>
 	<body>
 		your user name is <?echo $user;?><br> 
-		your password is <?echo $password?><br>
-		your name is <?echo $username?>
+		your password is <?echo $password;?><br>
+		your name is <?echo $username;?><br>
 	</body>
 </html>
