@@ -85,7 +85,7 @@ A{text-decoration:none}
 
 	<div class="container">
 		<div id= "Banner" class="Banner columns">
-			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 20% src="bannerlogo.png"/> </h1>
+			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 20% src="NewLogo1.png"/> </h1>
 			<br>
 			<ul class="tabs">
 				<li><a href="index.html">Home</a></li>
