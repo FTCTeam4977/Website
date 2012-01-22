@@ -101,7 +101,7 @@ A{text-decoration:none}
 				<form action="test.php">
 				<h1>Welcome Back <?echo $username ?>!</h1>
 				<p>To post something to the blog, enter your text here, then hit submit.</p>
-				<TEXTAREA Name="content" ROWS="3" COLS= "400" name="post"></TEXTAREA>
+				<TEXTAREA Name="content" ROWS="3" COLS= "400"></TEXTAREA>
 				<input type="submit">
 				</form>	
 			</center>
