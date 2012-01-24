@@ -117,9 +117,8 @@ A{text-decoration:none}
 		<hr>
 			
 
-	
+	<div class="sixteen columns">
 		<center>
-			
 		<p><pre>     	  More information about <a href="http://usfirst.org"target="_blank">FIRST</a> at <a href="http://usfirst.org"target="_blank">usfirst.org</a>		</pre>
 
 <a href="http://youtube.com/user/FTC4977"target="_blank">
