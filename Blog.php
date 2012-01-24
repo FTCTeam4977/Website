@@ -34,34 +34,45 @@
 	================================================== -->
 
 	<!-- Delete everything in this .container and get started on your own site! -->
-
 	<div class="container">
 		<div id= "Banner" class="Banner columns">
 			
-			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 40% src="NewLogo1.png"/> </h1>
+			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 40% src="NewLogo1.png"/><img width= 25% align="right" src="first.gif"> </h1>
 			<br>
 			<ul class="tabs">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="Media.html">Media</a></li>
 				<li><a href="Biographies.html">Biographies</a></li>
 				<li><a href="Tutorials.html">Tutorials</a></li>
-				<li><a class="active" href="Blog.html">Blog</a></li>
+				<li><a class="active" href="Blog.php">Blog</a></li>
 			</ul>
 		</div>
-<p>Sorry, this page is currently under construction!<p>
+		<div class="sixteen columns">
+		<?
+	  	$con = mysql_connect("localhost","root","root");
+		if (!$con)
+		  {
+		  die('Could not connect: ' . mysql_error());
+		  }
 
+		mysql_select_db("blog", $con);
+
+		$result = mysql_query("SELECT * FROM post ORDER BY id DESC");
+		
+		while($row = mysql_fetch_array($result))
+		  {
+		  	echo "<h3>", $row['Title'] .  "</h3> <p> <strong>". $row['TheDate'] . "</strong> <br>", $row['Content'] . " <br> <em> Posted By ".$row["Author"] .  "</em></p>" ;
+			echo "<hr>";
+		  }
+
+		mysql_close($con);
+		?>
+		</div>
+		<div class="sixteen columns">
 <!-- container -->
-	<hr>
-	<center>
-		<a href="http://usfirst.org"target="_blank"><img width="200" length="200" src="first.gif"/>
-
-	</center>
-
-	
 	<center>
 		<p>
-	
-    	<pre>     	  More information about <a href="http://usfirst.org"target="_blank">FIRST</a> at <a href="http://usfirst.org"target="_blank">usfirst.org</a>		</pre>
+    	<pre>     More information about <a href="http://usfirst.org"target="_blank">FIRST</a> at <a href="http://usfirst.org"target="_blank">usfirst.org</a>		</pre>
 
 <a href="http://youtube.com/user/FTC4977"target="_blank">
 <img src="Youtube.png" alt="Youtube" align="right" width="64" height="64" />
@@ -73,7 +84,7 @@
 
 		</p>
 	</center>
-
+</div>
 	<br><br><br>
 	
 

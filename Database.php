@@ -1,7 +1,6 @@
 <?php
 $user = $_POST["user"];
 $password = $_POST["password"];
-
 class Database
 {	
 	function __construct()
@@ -31,7 +30,6 @@ if(!$db->check($user, $password))
 	header("Location: Blog-Login.php?error=1");
 }
 $username = $db->users[$user][2];
-
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -71,6 +69,7 @@ $username = $db->users[$user][2];
 <STYLE>
 <!--
 A{text-decoration:none}
+
 -->
 </STYLE>
 </head>
@@ -85,7 +84,7 @@ A{text-decoration:none}
 
 	<div class="container">
 		<div id= "Banner" class="Banner columns">
-			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 20% src="NewLogo1.png"/> </h1>
+			<h1 class="remove-bottom" style="margin-top: 40px"><img  width= 20% src="NewLogo1.png"/><img width= 25% align="right" src="first.gif"> </h1>
 			<br>
 			<ul class="tabs">
 				<li><a href="index.html">Home</a></li>
@@ -98,10 +97,19 @@ A{text-decoration:none}
 		<div class="sixteen columns">
 		<div id="bumpDown">
 			<center>
-				<form action="test.php">
+				<form action="test.php" method="post">
 				<h1>Welcome Back <?echo $username ?>!</h1>
-				<p>To post something to the blog, enter your text here, then hit submit.</p>
-				<TEXTAREA Name="content" ROWS="3" COLS= "400"></TEXTAREA>
+				<p>To post something to the blog, first add the title.</p>
+				<TEXTAREA Name="title"></TEXTAREA>
+				<p>Then add your content here.</p>
+				<TEXTAREA Name="content"></TEXTAREA>
+				<p>Finally, choose the Author.</p>
+				<select Name="Author">
+				  <option>Andrew Lobos</option>
+				  <option>Collin Enders</option>
+				  <option>Ben Thomas</option>
+				  <option>Anonymous</option>
+				</select>
 				<input type="submit">
 				</form>	
 			</center>
