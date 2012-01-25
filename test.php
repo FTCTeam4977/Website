@@ -42,7 +42,7 @@
 	
 	$addPost= "INSERT INTO post (Title, TheDate, Content, Author) VALUES ('$title', '$date', '$content', '$author')";
 	
-	if(mysql_query($addPost))
+	if(mysql_query($addPost, $con))
 		echo "added post<br>";
 	
 	mysql_close($con);
