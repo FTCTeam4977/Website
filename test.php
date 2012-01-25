@@ -34,7 +34,7 @@
 	$content=$_POST['content'];
 	$author=$_POST['Author'];
 	echo $title , "<br>" , $date , "<br>",  $content, "<br>", $author ,"<br>";
-	if($con = mysql_connect("blthomas.db.8663266.hostedresource.com"."blthomas"."Zoebug202"))
+	if($con = mysql_connect("blthomas.db.8663266.hostedresource.com","blthomas","Zoebug202"))
 		echo "connected to sql server <br> ";
 	
 	if(mysql_select_db("blthomas", $con))
