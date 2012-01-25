@@ -49,13 +49,13 @@
 		</div>
 		<div class="sixteen columns">
 		<?
-	  	$con = mysql_connect("localhost","root","root");
+	  	$con = mysql_connect("blthomas.db.8663266.hostedresource.com","blthomas","Zoebug202");
 		if (!$con)
 		  {
 		  die('Could not connect: ' . mysql_error());
 		  }
 
-		mysql_select_db("blog", $con);
+		mysql_select_db("blthomas", $con);
 
 		$result = mysql_query("SELECT * FROM post ORDER BY id DESC");
 		

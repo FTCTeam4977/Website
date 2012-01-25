@@ -34,13 +34,13 @@
 	$content=$_POST['content'];
 	$author=$_POST['Author'];
 	echo $title , "<br>" , $date , "<br>",  $content, "<br>", $author ,"<br>";
-	if($con = mysql_connect("localhost","root","root"))
+	if($con = mysql_connect("blthomas.db.8663266.hostedresource.com","blthomas","Zoebug202"))
 		echo "connected to sql server <br> ";
 	
 	if (!$con)
 	  die('Could not connect: ' . mysql_error());
 	
-	if(mysql_select_db("blog",$con))
+	if(mysql_select_db("blthomas",$con))
 		echo "selected blog<br>";
 	
 	$addPost= "INSERT INTO post (Title, TheDate, Content, Author) VALUES ('$title', '$date', '$content', '$author')";
