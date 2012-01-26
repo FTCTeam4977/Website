@@ -40,7 +40,7 @@
 	if(mysql_select_db("blthomas", $con))
 		echo "selected blog<br>";
 	
-	$addPost= "INSERT INTO `post` (Title, TheDate, Content, Author) VALUES ('$title', '$date', '$content', '$author')";
+	$addPost= "INSERT INTO post (Title, TheDate, Content, Author) VALUES ('$title', '$date', '$content', '$author')";
 	
 	if(mysql_query($addPost, $con))
 		echo "added post<br>";
