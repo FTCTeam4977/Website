@@ -19,10 +19,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
-  ================================================== -->
+  ==================================================
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	 -->
 
 </head>
 <body>
@@ -39,7 +40,10 @@
 	
 	if(mysql_select_db("blthomas", $con))
 		echo "selected blog<br>";
-	
+	$title = mysql_real_escape_string($title);
+	$date = mysql_real_escape_string($date);
+	$content = mysql_real_escape_string($content);
+	$$author = mysql_real_escape_string($author);
 	$addPost= "INSERT INTO post (Title, TheDate, Content, Author) VALUES ('$title', '$date', '$content', '$author')";
 	
 	if(mysql_query($addPost, $con))
