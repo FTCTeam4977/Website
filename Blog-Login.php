@@ -70,8 +70,8 @@
 	?>
 </head>
 <body>
-<div class="cantainer">
-	<div calss="sixteen columns">
+<div class="container">
+	<div class="sixteen columns">
 		<center>
 		<h2>Hello!</h2>
 			 <h4>If you got to this page by mistake, click <a href="www.team4977.org">here</a></h4>

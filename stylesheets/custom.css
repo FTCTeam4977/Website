@@ -26,11 +26,11 @@
 		}
 		
 	}
-	
 	*/
-	.r{align:right;}
-	.l{align:left;}
-	.c{align:center;}
+	
+	.right{text-align:right;}
+	.l{text-align:left;}
+	.c{text-align:center;}
 	
 	.w10{width:10%;}
 	.w15{width:15%;}
