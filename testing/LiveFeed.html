@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			LiveFeed
+		</title>
+		<meta charset="UTF-8">
+		<script src="LiveFeed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		var clicks = 0;
+		var oldFeed = ["This is old feed_-_40","This is more old feed_-_10"];
+		function clickme(){
+			switch(clicks){
+				case 0:
+					clicks++;
+					update("cat",40,"This is the first post");
+					break;
+				case 1:
+					clicks++;
+					update("cat",60,"This is a bigger post");
+					break;
+				case 2:
+					clicks++;
+					update("cat",20,"This is the last post");
+					break;
+			} 
+			
+		}
+		</script>
+	</head>
+	<body onload="start('cat', 400, 200,oldFeed);">
+		<div style="width:900px;margin:auto">
+			<h1>
+				LiveFeed
+			</h1>
+			<p>
+				LiveFeed was created to make it easy to display "live" updates in a feed. The "click me" button demonstrates key features of LiveFeed. By clicking it, you cycle through a switch that calls the "update" function with different arguments. Follow these steps to begin using live feed.
+			</p><button type="button" onclick="clickme()">click me</button>
+			<ol>
+				<li>
+					In your body tag, add the "onload" event. As a string, give it the "start" function. "Start" can take up to four arguments: location, height, width, and scroll, but scroll is not required. Ex "&lt;body onload="start('cat', 400, 200);"&gt;".
+				</li>
+				<li>
+					Create a blank Div that doesn't contain anything with the id of the location you specified in the start function. Ex "&lt;div id="cat"&gt;&lt;/div&gt;"
+				</li>
+				<li>
+					To add a Feed, you need to call the "update" function. "Update" takes three arguments:location, height, and content. Ex "update("cat",40,"This is the first post");".
+				</li>
+			</ol>
+			<h2>Things to note</h2>
+			<p>
+				The feed needs a minimum amount of space to work so height can't be set to below 30 and width can't be set to below 400.<br>
+				To customize the theme of LiveFeed, edit the variables in the LiveFeed.js file in the customizable section.
+			<div id="cat"></div>
+		</div>
+	</body>
+</html>

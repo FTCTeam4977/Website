@@ -1,0 +1,123 @@
+body{
+	margin:10px 0 0 0;
+	background-color:#000;
+}
+
+p{
+	margin:0;
+}
+
+#container{
+	width:900px;
+	height:550px;
+	margin:auto;
+	background-color:#C0C0C0;
+	position:relative;
+	background:url("images/grad_container.jpg");
+	border-radius:5px;
+	-moz-border-radius:5px;
+	
+}
+
+#logoFiller{
+	width:300px;
+	height:125px;
+	background-color:white;
+}
+
+#upperNav{
+	position:absolute;
+	top:0;
+	right:0;
+	color:#FFF;
+}
+
+#photoArea{
+	
+}
+
+#logoFirst{
+	position:absolute;
+	bottom:70px;
+	right:10px;
+	z-index:2;
+}
+
+.active{
+	color:#686868;
+}
+
+#upperNav{
+	width:600px;
+	height:40px;
+	position:absolute;
+	top:0;
+	right:0;
+	color:#FFF;
+}
+
+#upperNav .upperLink{
+	padding:3px 0 0 0;
+	float:left;
+	width:118px;
+	height:28px;
+	margin:0;
+	text-align:center;
+	border: 1px solid #808080;
+	background:#000;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	font-family:"Spirax";
+	font-size:20px;
+	opacity:.40;
+}
+
+#upperNav .upperLink:hover{
+
+	opacity:.70;
+}
+
+#linkInfo{
+	width:900px;
+	height:150px;
+	position:absolute;
+	bottom:60px;
+	right:0;
+	background-color:#808080;
+}
+
+#linkInfo .info{
+	margin:5px;
+	color:#FFF;
+	display:none;
+}
+
+#lowerNav{
+	width:900px;
+	height:60px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	color:#FFF;
+}
+
+#lowerNav .lowerLink{
+	padding:10px 0 0 0;
+	float:left;
+	width:298px;
+	height:48px;
+	margin:0;
+	text-align:center;
+	border: 1px solid #808080;
+	background:#000;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	font-family:"Spirax";
+	font-size:35px;
+	opacity:.40;
+}
+
+#lowerNav .lowerLink:hover{
+
+	opacity:.70;
+}
