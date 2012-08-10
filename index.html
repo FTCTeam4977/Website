@@ -1,135 +1,72 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>LAN Lords - FTC 4977</title>
-	<meta name="google-site-verification" content="HmLyK5rteHP_iEO6ujBozCudy67jNfxgcbbydDGrip4" />
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS	
-  ================================================== -->
-	<link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css">
-	
-	<script type="text/javascript">
-
-  	var _gaq = _gaq || [];
-  	_gaq.push(['_setAccount', 'UA-32712521-1']);
-  	_gaq.push(['_trackPageview']);
-
-  	(function() {
-  	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	})();
-
-	</script>
-	
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-</head>
-<body>
-
-
-
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-
-	<div class="container">
+<html>
+	<head>
+		<title>LAN lords - Home</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+		</script>
+		<script src="fade.js" type="text/javascript" charset="utf-8"></script>
 		
-			
-			<h1 class="remove-bottom" style="margin-top: 40px"><img class="w40 r" alt="Team 4977" src="NewLogo1.png"/> <a href="http://www.usfirst.org"><img style="position: absolute;
-right: 0px;" class="w25 right" src="first.gif" alt="FIRST"></a></h1>
-			<br>
-			<ul class="tabs">
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="Media.html">Media</a></li>
-				<li><a href="Biographies.html">Biographies</a></li>
-				<li><a href="Tutorials.html">Tutorials</a></li>
-				<li><a href="Blog.php">Blog</a></li>
-			</ul>
-		
-		<div id="bumpDown">
-			<div class="one-third column">
-				<h3>The Robot</h3>
-				<img class="w60 h30" src="Robot.jpg" alt="Ping"/>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="container">
+				<header>
+					<!-- <img id="logoMain" src="logo.jpg" alt="LANLords"> -->
+					<div id="logoFiller">Logo goes here</div>
+				</header>
+				<section id="upperNav">
+					<div id="Home" class="upperLink active">
+						<p>Home</p>
+					</div>
+					<div id="Media" class="upperLink">
+						<p>Media</p>
+					</div>
+					<div id="Biographies" class="upperLink">
+						<p>Biographies</p>
+					</div>
+					<div id="Tutorials" class="upperLink">
+						<p>Tutorials</p>
+					</div>
+					<div id="Blog" class="upperLink">
+						<p>Blog</p>
+					</div>
+				</section>
+				<section id="photoArea">
+				
+				</section>
+				<img id="logoFirst" src="FIRST.gif" alt="First" width="150px">
+				<section id="linkInfo">
+					<div id="HomeInfo" class="info">
+						<p>This is the Home Info</p>
+					</div>
+					<div id="MediaInfo" class="info">
+						<p>This is the Media Info</p>
+					</div>
+					<div id="BiographiesInfo" class="info">
+						<p>This is the Bios</p>
+					</div>
+					<div id="TutorialsInfo" class="info">
+						<p>This is the tutorials</p>
+					</div>
+					<div id="BlogInfo" class="info">
+						<p>This is the Blog</p>
+					</div>
+				</section>
+				<section id="lowerNav">
+					<div id="aboutUs" class="lowerLink">
+						<p>About Us</p>
+					</div>
+					<div id="TheRobots" class="lowerLink">
+						<p>The Robots</p>
+					</div>
+					<div id="Events" class="lowerLink">
+						<p>Events</p>
+					</div>
+				</section>
 			</div>
-			<div class="one-third column">
-				<h3>About Us</h3>
-				<img class="h30 w70" alt ="The team" src="team-pic.png" />
-				<p>We are a Lancaster, PA based FTC team with members from Penn Manor, Hempfield, and Manheim Township.</p>
-			</div>
-			<div class="five columns">
-				<h3>Watch Us @ <a href="http://youtube.com/ftc4977">YouTube </a></h3>
-				<p>
-					<iframe width="310" height="205" src="http://www.youtube.com/embed/RxUFDtvT2ko"></iframe>
-					<a href="http://youtube.com/ftc4977">More videos on YouTube. </a>
-				</p>
-			</div>
-			<div class="one-third column">
-				<h3>Programming</h3>
-				<p>Full robot code available <a href="https://github.com/FTCTeam4977/Robot2011-2012">here</a></p>
-				<ul class="square">
-					<li><strong><a href="gyrolib.html">Gyro Library</a></strong>: HiTechnic gyro integration library</li>
-					<li><strong><a href="https://github.com/FTCTeam4977/Robot2011-2012/blob/master/FTC_PID.c">PID Library</a></strong>: PID control loop library</li>
-					<li><strong><a href="https://github.com/FTCTeam4977/Robot2011-2012/blob/master/autonoLib.c">autonoLib</a></strong>: Library for rapid development of autonomous programs</li>
-				</ul>
-			</div>
-			<div class="one-third column">
-				<h3>Team Members</h3>
-				<ul class="square">
-					<li><a Href="Andrew.html"><strong>Andrew Lobos</strong></a><br>Programming leader</li>
-					<li><a Href="Wren.html"><strong>Wren Hensgen</strong></a><br>Mechanical Leader</li>
-					<li><a Href="Ben.html"><strong>Ben Thomas</strong></a><br>Programmer</li>
-					<li><a Href="Tom.html"><strong>Tom Sowers</strong></a><br>Mechanical</li>
-					<li><a Href="Collin.html"><strong>Collin Enders</strong></a><br>Programmer</li>
-					<li><a Href="Ryan.html"><strong>Ryan Ulrich</strong></a><br>Mechanical</li>
-				</ul>
-			</div>
-			<div class="five columns">
-				<h3>Upcoming Events</h3>
-					<ul class="square">
-						<li><strong>Locust Grove Demo</strong><br>August 15</li>
-					</ul>
-			</div>
-			<!-- container -->
-			<hr>
-    	<pre>     	  More information about <a href="http://usfirst.org" target="_blank">FIRST</a> at <a href="http://usfirst.org" target="_blank">usfirst.org</a>		</pre>
-		<a href="http://youtube.com/user/FTC4977" target="_blank"><img src="Youtube.png" alt="YouTube"  width="64" height="64" /></a>
-		<a href="http://www.facebook.com/pages/FTC-Team-4977/214602341946076" target="_blank"><img class="r" src="facebook%20icon.png" alt="Facebook" width="64" height="64" /></a>
-		<br><br><br>
-	</div>
-</div>	
-		
-
-	<!-- JS
-	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
-
-<!-- End Document
-================================================== -->
-</body>
+		</div>
+	</body>
 </html>
