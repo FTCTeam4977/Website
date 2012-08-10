@@ -80,4 +80,49 @@ $(document).ready(function(){
 			});
 		});
 	});
+	$("#AboutUs").mouseover(function(){
+		console.log(window.fading);
+		if(window.fading)
+			return;
+		if(dis_info == "#AboutUsInfo")
+			return;
+		window.fading = true;
+		$(dis_info).fadeTo(500,0,function() {
+			$(dis_info).hide();
+			dis_info = "#AboutUsInfo";
+			$("#AboutUsInfo").fadeTo(500,1,function(){
+				window.fading = false;
+			});
+		});
+	});
+	$("#TheRobots").mouseover(function(){
+		console.log(window.fading);
+		if(window.fading)
+			return;
+		if(dis_info == "#TheRobotsInfo")
+			return;
+		window.fading = true;
+		$(dis_info).fadeTo(500,0,function() {
+			$(dis_info).hide();
+			dis_info = "#TheRobotsInfo";
+			$("#TheRobotsInfo").fadeTo(500,1,function(){
+				window.fading = false;
+			});
+		});
+	});
+	$("#Events").mouseover(function(){
+		console.log(window.fading);
+		if(window.fading)
+			return;
+		if(dis_info == "#EventsInfo")
+			return;
+		window.fading = true;
+		$(dis_info).fadeTo(500,0,function () {
+			$(dis_info).hide();
+			dis_info = "#EventsInfo";
+			$("#EventsInfo").fadeTo(500,1,function(){
+				window.fading = false;
+			});
+		});
+	});
 });
