@@ -3,7 +3,7 @@ body{
 	background-color:#000;
 }
 
-p{
+p,h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 
@@ -90,6 +90,27 @@ p{
 	margin:5px;
 	color:#FFF;
 	display:none;
+}
+
+#HomeBlock{
+	padding:0 10px 0 10px;
+	height:142.5px;
+	width:550px;
+	background-color:#616161;
+	border-radius:10px;
+	-moz-border-radius:10px;
+}
+
+#NewsArea{
+	margin:5px;
+	width:155px;
+	height:142.5px;
+	position:absolute;
+	right:160px;
+	bottom:-2.5px;
+	background-color:#616161;
+	border-radius:10px;
+	-moz-border-radius:10px;
 }
 
 #lowerNav{
