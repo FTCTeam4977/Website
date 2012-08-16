@@ -7,6 +7,10 @@ p,h1,h2,h3,h4,h5,h6{
 	margin:0;
 }
 
+table{
+	border:#808080 solid 3px;
+}
+
 #container{
 	width:900px;
 	height:600px;
@@ -44,7 +48,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 #logoFirst{
 	position:absolute;
-	bottom:70px;
+	bottom:65px;
 	right:25px;
 	z-index:2;
 }
@@ -105,12 +109,18 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 .infoBlock{
+	margin:0  0 0 5px;
 	padding:0 10px 0 10px;
 	height:115px;
 	width:700px;
 	background-color:#616161;
 	border-radius:10px;
 	-moz-border-radius:10px;
+}
+
+.infoBlock h2{
+	font-family:"Spirax";
+	font-size:30px;
 }
 
 #lowerNav{

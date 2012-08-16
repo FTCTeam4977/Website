@@ -15,7 +15,7 @@ function Change(){
 	place = (Pics.length > place ? place:0);
 	document.images.slide.src=eval("Pics[" + place + "].src");
 	place++;
-	setTimeout("Change()",5000);
+	setTimeout("Change()",3000);
 }
 
 changeShow(Home);
