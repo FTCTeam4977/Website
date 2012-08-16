@@ -19,6 +19,7 @@ $(document).ready(function(){
 				window.fading = false;
 			});
 		});
+		changeShow(Home);
 	});
 	$("#Media").mouseover(function(){
 		console.log(window.fading);
@@ -109,6 +110,7 @@ $(document).ready(function(){
 				window.fading = false;
 			});
 		});
+		changeShow(Robots);
 	});
 	$("#Events").mouseover(function(){
 		console.log(window.fading);

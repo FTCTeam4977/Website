@@ -85,7 +85,8 @@ p,h1,h2,h3,h4,h5,h6{
 #slide{
 	display:block;
 	margin:auto;
-	position: relative
+	position: relative;
+	height:400px;
 }
 
 #linkInfo{

@@ -1,15 +1,20 @@
 var Home = ["01.jpg","02.jpg","03.jpg"];
-var Robots = ["11.jpg","12.jpg","13.jpg"];
+var Robots = ["03.jpg","12.jpg"];
 var Pics = [];
+var place = 0;
 function changeShow(array){
+	Pics = [];
 	for(i = 0; array.length > i; i++){
 		Pics[i] = new Image();
 		Pics[i].src = "images/" + array[i];
 	}
 }
 
-changeShow(Home);
-
-function onload(){
-document.images.slide.src=eval("Pics[" + 2 + "].src");
+function Change(){
+	place = (Pics.length > place ? place:0);
+	document.images.slide.src=eval("Pics[" + place + "].src");
+	place++;
+	setTimeout("Change()",5000);
 }
+
+changeShow(Home);
