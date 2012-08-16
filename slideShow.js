@@ -2,6 +2,7 @@ var Home = ["01.jpg","02.jpg","03.jpg"];
 var Robots = ["03.jpg","12.jpg"];
 var Pics = [];
 var place = 0;
+
 function changeShow(array){
 	Pics = [];
 	for(i = 0; array.length > i; i++){

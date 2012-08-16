@@ -9,7 +9,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 #container{
 	width:900px;
-	height:550px;
+	height:600px;
 	margin:auto;
 	background-color:#C0C0C0;
 	position:relative;
@@ -45,7 +45,7 @@ p,h1,h2,h3,h4,h5,h6{
 #logoFirst{
 	position:absolute;
 	bottom:70px;
-	right:10px;
+	right:25px;
 	z-index:2;
 }
 
@@ -91,7 +91,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 #linkInfo{
 	width:900px;
-	height:70px;
+	height:125px;
 	position:absolute;
 	bottom:60px;
 	right:0;
@@ -104,22 +104,10 @@ p,h1,h2,h3,h4,h5,h6{
 	display:none;
 }
 
-#HomeBlock{
+.infoBlock{
 	padding:0 10px 0 10px;
-	height:70px;
+	height:115px;
 	width:700px;
-	background-color:#616161;
-	border-radius:10px;
-	-moz-border-radius:10px;
-}
-
-#NewsArea{
-	margin:5px;
-	width:155px;
-	height:142.5px;
-	position:absolute;
-	right:160px;
-	bottom:-2.5px;
 	background-color:#616161;
 	border-radius:10px;
 	-moz-border-radius:10px;
