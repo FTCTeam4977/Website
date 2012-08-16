@@ -8,18 +8,16 @@
 		<script src="jquery.js">
 		</script>
 		<script src="fade.js" type="text/javascript"></script>
-		<!-- <script src="slideShow.js" type="text/javascript"></script>-->
+		<script src="slideShow.js" type="text/javascript"></script>
 		<script>
 		</script>
 		
 	</head>
-	<body>
+	<body onload="onload()">
 		<div id="wrapper">
 			<div id="container">
-				<header>
 					<!-- <img id="logoMain" src="logo.jpg" alt="LANLords"> -->
 					<div id="logoFiller">Logo goes here</div>
-				</header>
 				<section id="upperNav">
 					<div id="Home" class="upperLink active">
 						<p>Home</p>
@@ -38,7 +36,7 @@
 					</div>
 				</section>
 				<section id="photoArea">
-				
+				<img id="slide" name="slide" src="images/01.jpg" width="600">
 				</section>
 				<img id="logoFirst" src="FIRST.gif" alt="First" width="150px">
 				<section id="linkInfo">
@@ -78,9 +76,6 @@
 					</div>
 					<div id="EventsInfo" class="info">
 						<p>This is the events</p>
-					</div>
-					<div id="NewsArea">
-						News Area
 					</div>
 				</section>
 				<section id="lowerNav">

@@ -23,6 +23,8 @@ p,h1,h2,h3,h4,h5,h6{
 	width:300px;
 	height:125px;
 	background-color:white;
+	z-index:1;
+	position: relative
 }
 
 #upperNav{
@@ -33,7 +35,11 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 #photoArea{
-	
+	width:900px;
+	height:400px;
+	position:absolute;
+	top:33px;
+	margin:auto;
 }
 
 #logoFirst{
@@ -73,13 +79,18 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 #upperNav .upperLink:hover{
-
 	opacity:.70;
+}
+
+#slide{
+	display:block;
+	margin:auto;
+	position: relative
 }
 
 #linkInfo{
 	width:900px;
-	height:150px;
+	height:70px;
 	position:absolute;
 	bottom:60px;
 	right:0;
@@ -94,8 +105,8 @@ p,h1,h2,h3,h4,h5,h6{
 
 #HomeBlock{
 	padding:0 10px 0 10px;
-	height:142.5px;
-	width:550px;
+	height:70px;
+	width:700px;
 	background-color:#616161;
 	border-radius:10px;
 	-moz-border-radius:10px;
