@@ -15,16 +15,10 @@ function changeShow(array){
 }
 
 function ClearShow(){
-	switch (showType){
-		case "change":
-			display = "";
-			slide = "";
-			document.getElementById("photoArea").innerHTML="";
-			clearTimeout(NextChange);
-			break;
-		default:
-			return false;
-	}
+	display = "";
+	slide = "";
+	document.getElementById("photoArea").innerHTML="";
+	clearTimeout(NextChange);
 }
 
 function change(){
