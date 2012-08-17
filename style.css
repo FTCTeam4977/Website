@@ -41,12 +41,13 @@ table{
 	position:absolute;
 	top:33px;
 	margin:auto;
+	overflow:hidden;
 }
 
 #logoFirst{
 	position:absolute;
-	bottom:65px;
-	right:25px;
+	top:200px;
+	left:45px;
 	z-index:2;
 }
 
@@ -84,9 +85,8 @@ table{
 }
 
 .slide{
-	display:block;
-	margin:auto;
-	position: relative;
+	position:absolute;
+	left:300px;
 	height:400px;
 }
 
@@ -109,7 +109,7 @@ table{
 	margin:0  0 0 5px;
 	padding:0 10px 0 10px;
 	height:115px;
-	width:700px;
+	width:870px;
 	background-color:#616161;
 	border-radius:10px;
 	-moz-border-radius:10px;
