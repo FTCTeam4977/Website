@@ -50,10 +50,15 @@ function fadeInAndOut(){
 		place = (Pics.length > place ? place:0);
 		document.images.slide.src=eval("Pics[" + place + "].src");
 		place++;
-		$("#slide").fadeTo(1000,1,function(){
-			NextChange = setTimeout("fadeInAndOut();",3000);
-		});
+		setTimeout('fadeIn()', 400);
 	});
 }
+
+function fadeIn(){
+	$("#slide").fadeTo(1000,1,function(){
+		NextChange = setTimeout("fadeInAndOut();",3000);
+	});
+}
+
 
 changeShow(Home);
