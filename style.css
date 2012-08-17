@@ -86,7 +86,7 @@ table{
 	opacity:.70;
 }
 
-#slide{
+.slide{
 	display:block;
 	margin:auto;
 	position: relative;
