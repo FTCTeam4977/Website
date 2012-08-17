@@ -75,7 +75,7 @@ table{
 	background:#000;
 	border-radius:5px;
 	-moz-border-radius:5px;
-	font-family:"Spirax";
+	font-family:"Source Sans Pro";
 	font-size:20px;
 	opacity:.40;
 }
@@ -116,7 +116,7 @@ table{
 }
 
 .infoBlock h2{
-	font-family:"Spirax";
+	font-family:"Source Sans Pro";
 	font-size:30px;
 }
 
@@ -140,7 +140,7 @@ table{
 	background:#000;
 	border-radius:5px;
 	-moz-border-radius:5px;
-	font-family:"Spirax";
+	font-family:"Source Sans Pro";
 	font-size:35px;
 	opacity:.40;
 }
