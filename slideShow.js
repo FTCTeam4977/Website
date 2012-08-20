@@ -1,5 +1,5 @@
 var Home = ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg"];
-var Robots = ["03.jpg","12.jpg"];
+var Robots = ["03.jpg"];
 var Pics = [];
 var place = 0;
 var showType = "change";	
