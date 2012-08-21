@@ -1,4 +1,5 @@
 <?php
+mkdir("blog-files/");
 $dir = scandir("blog-files/");
 $dir = array_reverse($dir);
 foreach($dir as $file){/*
