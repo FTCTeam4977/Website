@@ -10,5 +10,8 @@ foreach($dir as $file){
 	}
 }
 */
-echo scandir(".");
+$dir = scandir(".");
+foreach($dir as $file){
+	echo $file;
+}
 ?>
