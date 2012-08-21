@@ -1,8 +1,6 @@
 <?php
-mkdir("blog-files/");
 $dir = scandir("blog-files/");
 $dir = array_reverse($dir);
-echo "working;"
 foreach($dir as $file){/*
 	if($file != "." && $file != ".."){
 		$data = file_get_contents("blog-files/".$file);
