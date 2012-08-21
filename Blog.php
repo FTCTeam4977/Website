@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>The blog</title>
+	<meta charset="UTF-8">
 </head>
 <body>
 <?php
@@ -15,5 +16,5 @@ foreach($dir as $file){
 	}
 }
 ?>
-<body>
+</body>
 </html>
