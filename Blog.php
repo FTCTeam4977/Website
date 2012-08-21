@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The blog</title>
+</head>
+<body>
 <?php
 $dir = scandir("blog-files/");
 $dir = array_reverse($dir);
@@ -9,3 +15,5 @@ foreach($dir as $file){
 	}
 }
 ?>
+<body>
+</html>
