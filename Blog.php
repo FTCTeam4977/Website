@@ -10,7 +10,7 @@ foreach($dir as $file){
 	}
 }
 */
-$dir = scandir(".");
+$dir = scandir("blog-files/");
 foreach($dir as $file){
 	echo $file;
 }
