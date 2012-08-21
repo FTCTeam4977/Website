@@ -1,11 +1,11 @@
 <?php
 $dir = scandir("blog-files/");
+$dir = array_reverse($dir);
 foreach($dir as $file){
 	if($file != "." && $file != ".."){
 		$data = file_get_contents("blog-files/".$file);
 		$var = explode(";;;",$data);
-		echo "<div class='title'><h2>".$var[0]."</h2></div><div class='author'><p>".$var[1]."</p></div><div class='date'></div><div class='content'><p>".$var[2]."</p></div>";
+		echo "<div class='title'><h2>".$var[0]."</h2></div><div class='author'><p>".$var[1]."</p></div><div class='date'>".$file."</div><div class='content'><p>".$var[2]."</p></div>";
 	}
-}	
-
+}
 ?>
