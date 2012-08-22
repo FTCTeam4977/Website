@@ -38,7 +38,7 @@ if(!$isLoggedIn)
 	</header>
 	<section>
 		<div id="loginArea">
-			<form name="login" methond="post" action="validate.php" onsubmit="return checkLogin()">
+			<form name="login" method="post" action="validate.php" onsubmit="return checkLogin()">
 				<input name="user" placeholder="username" type="text">
 				<input name="passwd" placebolder="password" type="password">
 				<input type="submit">
