@@ -15,7 +15,20 @@ if(!$isLoggedIn)
 		function checkLogin(){
 			x = document.forms['login']['user'].value;
 			y = document.forms['login']['passwd'].value;
-			return x+y;
+			if(x == "" || x == null){
+				if(y == "" || y == null){
+					alert("Please fill out:\nusername\npassword");
+					return false;
+				}
+				else{
+					alert("Please fill out:\nusername");
+					return false;
+				}
+			}
+			if(y == "" || y == null){
+				alert("Please fill out:\npassword");
+				return false;
+			}
 		}
 	</script>
 </head>
@@ -32,4 +45,4 @@ if(!$isLoggedIn)
 		</div>
 	</section>
 </body>
-</html>b
+</html>
