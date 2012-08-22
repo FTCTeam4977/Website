@@ -40,7 +40,7 @@ if(!$isLoggedIn)
 		<div id="loginArea">
 			<form name="login" method="post" action="validate.php" onsubmit="return checkLogin()">
 				<input name="user" placeholder="username" type="text">
-				<input name="passwd" placebolder="password" type="password">
+				<input name="passwd" placeholder="password" type="password">
 				<input type="submit">
 			</form>
 		</div>
