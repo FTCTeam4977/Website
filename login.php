@@ -5,7 +5,7 @@ $_SESSION['username'] = "Benjamin";
 $isLoggedIn = $_SESSION['isLoggedIn'];
 $username = $_SESSION['username'];
 if($isLoggedIn)
-	header("Location: Home.php");
+	echo $isLoggedIn;
 ?>
 <!DOCTYPE html>
 <html>
