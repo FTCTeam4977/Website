@@ -41,7 +41,7 @@ if(!$isLoggedIn)
 			<form name="login" methond="post" action="validate.php" onsubmit="return checkLogin()">
 				<input name="user" placeholder="username" type="text">
 				<input name="passwd" placebolder="password" type="password">
-				<input type"submit">
+				<input type="submit">
 			</form>
 		</div>
 	</section>
