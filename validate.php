@@ -28,7 +28,7 @@ class Database
 $db = new Database();
 if(!$db->check($user, $password))
 {
-	header("Location: Blog-Login.php?error=1");
+	header("Location: login.php");
 }
 echo "Your in!!!";
 ?>
