@@ -1,7 +1,5 @@
 <?php
-session_start();
-$username = $_POST["user"];
-$password = $_POST["passwd"];
+include "LoginCheck.php";
 class Database
 {	
 	function __construct()

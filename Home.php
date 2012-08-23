@@ -30,7 +30,7 @@ include "LoginCheck.php";
 <body>
 	
 	<h2>Hello <?echo $user;?></h2>
-	<a href="logout.php">Logout here</a>
+	<a href="Logout.php">Logout here</a>
 	<a href="Blog.php">View Blog</a>
 	<div id="newPost">
 		<p>To added a post, enter the info here</p>
