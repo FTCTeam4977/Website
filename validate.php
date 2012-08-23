@@ -1,5 +1,4 @@
 <?php
-include "LoginCheck.php";
 class Database
 {	
 	function __construct()
