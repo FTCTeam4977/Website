@@ -1,9 +1,8 @@
 <?php
 session_start();
-$_SESSION['isLoggedIn'] = true;
 $isLoggedIn = $_SESSION['isLoggedIn'];
 $username = $_SESSION['username'];
-if(!$isLoggedIn)
+if($isLoggedIn)
 	header("Location: Home.php");
 ?>
 <!DOCTYPE html>

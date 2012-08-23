@@ -8,7 +8,7 @@ class Database
 	{	
 		$this->users = array();
 		touch("users.db");
-		$data = file_get_contents("user.db");
+		$data = file_get_contents("users.db");
 		$lines = explode("\n", $data);	
 		foreach ( $lines as $line )
 		{
@@ -26,9 +26,13 @@ class Database
 }
 
 $db = new Database();
-if(!$db->check($user, $password))
+if(!$db->check($username, $password))
 {
 	header("Location: login.php");
 }
-echo "Your in!!!";
+else{
+	$_SESSION['isLoggedIn'] = true;
+	$_SESSION['user'] = $db->users[$username][2];
+	header("Location:Home.php");
+}
 ?>

@@ -1,4 +1,5 @@
 <?php
+include "LoginCheck.php";
 $dir = "blog-files/";
 $NewFile = date("F j, Y, g:i a").".txt";
 $fileHandler = fopen($dir.$NewFile,"w");
