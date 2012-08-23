@@ -4,7 +4,7 @@ include "LoginCheck.php";
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Home - <?echo $user;?></title>
 	<meta charset="UTF-8">
 	<script>
 	function checkAddPost(){
