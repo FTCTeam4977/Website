@@ -26,7 +26,9 @@ $db = new Database();
 if(!$db->check($username, $password))
 {
 	//header("Location: login.php");
-	echo $db->users[$username][2];
+	touch("users.db");
+	$data = file_get_contents("users.db");
+	echo $data;
 }
 else{
 	$_SESSION['isLoggedIn'] = true;
