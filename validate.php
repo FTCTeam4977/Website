@@ -25,7 +25,8 @@ class Database
 $db = new Database();
 if(!$db->check($username, $password))
 {
-	header("Location: login.php");
+	//header("Location: login.php");
+	echo $db->users;
 }
 else{
 	$_SESSION['isLoggedIn'] = true;
