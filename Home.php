@@ -40,6 +40,20 @@ include "LoginCheck.php";
 		<input type="hidden" name="author" value="<?echo $user;?>">
 		<input type="submit">
 		</form>
+		<table>
+			<tr>
+				<td>Date</td><td>Author</td><td>Title</td><td>Content</td>
+				<?
+				$dir = scandir("blog-files/");
+				foreach($dir as $file){
+					if($file != ""||$file != null){
+						$data = explode(chr(29),$file);
+						echo "<td>".substr($file, 0, -4)."</td><td>".$data[1]."</td><td>".$data[0]."</td><td>".$data[2]."</td>";
+					}
+				}
+				?>
+			</tr>
+		</table>
 	</div>
 </body>
 </html>

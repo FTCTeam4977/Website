@@ -1,5 +1,9 @@
 <?
 include "LoginCheck.php";
+if($_POST["title"] == "" || $_POST["title"] == null)
+	die();
+if($_POST["content"] == "" || $_POST["content"] == null)
+	die();
 $NewFile = date("n j, Y, g:i a").".txt";
 $dir = "./blog-files/";
 $fileHandler = fopen($dir.$NewFile,"w");
