@@ -43,12 +43,13 @@ include "LoginCheck.php";
 		<table>
 			<tr>
 				<td>Date</td><td>Author</td><td>Title</td><td>Content</td>
+			<tr>
 				<?
 				$dir = scandir("blog-files/");
 				foreach($dir as $file){
-					if($file != ""||$file != null){
+					if($file != ".."||$file != "."){
 						$data = explode(chr(29),$file);
-						echo "<td>".substr($file, 0, -4)."</td><td>".$data[1]."</td><td>".$data[0]."</td><td>".$data[2]."</td>";
+						echo "<tr><td>".substr($file, 0, -4)."</td><td>".$data[1]."</td><td>".$data[0]."</td><td>".$data[2]."</td></tr>";
 					}
 				}
 				?>
