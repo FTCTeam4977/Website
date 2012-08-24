@@ -48,8 +48,8 @@ include "LoginCheck.php";
 				$dir = scandir("blog-files/");
 				foreach($dir as $file){
 					if($file != ".." && $file != "."){
-						$data = explode(chr(29),$file);
-						$var = file_get_contents("blog-files/".$data);
+						$data = file_get_contents("blog-files/".$var);
+						$var = explode(chr(29),$file);
 						echo "<tr><td>".substr($file, 0, -4)."</td><td>".$var[1]."</td><td>".$var[0]."</td><td>".$var[2]."</td></tr>";
 					}
 				}
