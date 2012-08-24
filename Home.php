@@ -42,7 +42,7 @@ include "LoginCheck.php";
 		</form>
 		<table>
 			<tr>
-				<td>Date</td><td>Author</td><td>Title</td><td>Content</td>
+				<td>Date</td><td>Author</td><td>Title</td><td>Content</td><td>delete</td>
 			<tr>
 				<?
 				$dir = scandir("blog-files/");
