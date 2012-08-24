@@ -51,7 +51,7 @@ include "LoginCheck.php";
 					if($file != ".." && $file != "."){
 						$data = file_get_contents("blog-files/".$file);
 						$var = explode(chr(29),$data);
-						echo "<tr><td>".substr($file, 0, -4)."</td><td>".$var[1]."</td><td>".$var[0]."</td><td>".$var[2]."</td><td><form method='post' name='delete'><input name='file' type='hidden' value='".$file."'><input type='submit' name='delete_".substr($file, 0, -4)."'></form></td></tr>";
+						echo "<tr><td>".substr($file, 0, -4)."</td><td>".$var[1]."</td><td>".$var[0]."</td><td>".$var[2]."</td><td><form method='post' name='delete' action='deletePost.php'><input name='file' type='hidden' value='".$file."'><input type='submit' name='delete_".substr($file, 0, -4)."'></form></td></tr>";
 					}
 				}
 				?>
