@@ -46,7 +46,7 @@ include "LoginCheck.php";
 			<tr>
 				<?
 				$dir = scandir("blog-files/");
-				array_reverse($dir);
+				$dir = array_reverse($dir);
 				foreach($dir as $file){
 					if($file != ".." && $file != "."){
 						$data = file_get_contents("blog-files/".$file);
