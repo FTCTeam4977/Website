@@ -31,6 +31,7 @@ if(!$db->check($username, $password))
 else{
 	$_SESSION['isLoggedIn'] = true;
 	$_SESSION['user'] = $db->users[$username][2];
+	$_SESSION['level'] = users[$username][3];
 	header("Location:Home.php");
 }
 ?>

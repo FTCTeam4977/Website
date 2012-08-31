@@ -29,7 +29,7 @@ include "LoginCheck.php";
 </head>
 <body>
 	
-	<h2>Hello <?echo $user;?></h2>
+	<h2>Hello <?echo $user." level:".$_SESSION['level'];?></h2>
 	<a href="logout.php">Logout here</a>
 	<a href="Blog.php">View Blog</a>
 	<div id="newPost">
