@@ -20,5 +20,5 @@ foreach($rows as $row){
 		echo "The user is ".$data[2].", and the password is ".$data[1];
 	}
 }
-
+unlink("db.lock");
 ?>
