@@ -3,7 +3,6 @@ include "LoginCheck.php";
 $starttime = time();
 while(file_exists("db.lock"))
 {
-	echo "the file exists\n";
 	$timepassed = time()-$starttime;
 	if ( $timepassed>5)
 	{
