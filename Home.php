@@ -6,6 +6,7 @@ include "LoginCheck.php";
 <head>
 	<title>Home - <?echo $user;?></title>
 	<meta charset="UTF-8">
+	<script src="jquery.js"></script>
 	<script>
 	function checkAddPost(){
 		x = document.forms['addPost']['title'].value;
@@ -25,6 +26,13 @@ include "LoginCheck.php";
 			return false;
 		}
 	}
+	
+	$(document).ready(function(){
+		$("changePasswd").hide();
+		$("ChangeLink").click(function(){
+			$("changePasswd").slideToggle();
+		});
+	});
 	</script>
 </head>
 <body>
@@ -32,6 +40,14 @@ include "LoginCheck.php";
 	<h2>Hello <?echo $user." level:".$_SESSION['level'];?></h2>
 	<a href="Logout.php">Logout here</a>
 	<a href="Blog.php">View Blog</a>
+	<a id="changeLink" href="">change password</a>
+	<div id="changePasswd">
+		<form id="changePasswdForm">
+			<input type="text" placeholder="old password">
+			<input type="text" placeholder="new password">
+			<input type="text" placeholder="new password">
+		</form>
+	</div>
 	<div id="newPost">
 		<p>To added a post, enter the info here</p>
 		<form name="addPost" method="post" action="newPost.php" onsubmit="return checkAddPost()">
