@@ -28,9 +28,9 @@ include "LoginCheck.php";
 	}
 	
 	$(document).ready(function(){
-		$("changePasswd").hide();
-		$("ChangeLink").click(function(){
-			$("changePasswd").slideToggle();
+		$("#changePasswd").hide();
+		$("#ChangeLink").click(function(){
+			$("#changePasswd").slideToggle();
 		});
 	});
 	</script>
