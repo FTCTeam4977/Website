@@ -128,6 +128,29 @@ table{
 	font-size:30px;
 }
 
+#ContentMain{
+	position:absolute;
+	left:300px;
+	top:30px;
+	padding:10px;
+	height:340px;
+	width:570px;
+	font-family:"Source Sans Pro";
+}
+
+#ContentLower {
+	position:absolute;
+	left:10px;
+	bottom:10px;
+	padding:10px;
+	height:180px;
+	width:860px;
+	font-family:"Source Sans Pro";
+	background:#585858;
+	border-radius:5px;
+	-moz-border-radius:5px;
+}
+
 #lowerNav{
 	width:900px;
 	height:60px;
