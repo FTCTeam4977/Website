@@ -98,7 +98,7 @@ A{text-decoration:none}
 		<div id="bumpDown">
 			<center>
 				<form action="test.php" method="post">
-				<h1>Welcome Back <?echo $username ?>!</h1>
+				<h1>Welcome bnck <?echo $username ?>!</h1>
 				<p>To post something to the blog, first add the title.</p>
 				<TEXTAREA Name="title"></TEXTAREA>
 				<p>Then add your content here.</p>
