@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<!-- Basic Page Needs
@@ -74,7 +73,7 @@
 	<div class="sixteen columns">
 		<center>
 		<h2>Hello!</h2>
-			 <h4>If you got to this page by mistake, click <a href="www.team4977.org">here</a></h4>
+			 <h4>If you got to this page by mistake, click <a href="http://www.team4977.org">here</a></h4>
 			<? echo $error; ?>
 		<form name="myForm" action="Database.php" method="post" onSubmit="return validateForm()">
 			Username: <input type= "text" name="user"><br>
