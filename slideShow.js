@@ -21,6 +21,12 @@ function ClearShow(){
 	clearTimeout(NextChange);
 }
 
+function doResize()
+{
+	alert("hi");
+
+}
+
 function change(){
 	if(!display){
 		display = new Image();
@@ -50,7 +56,9 @@ function fadeInAndOut(){
 		place = (Pics.length > place ? place:0);
 		document.images.slide.src=eval("Pics[" + place + "].src");
 		place++;
-		setTimeout('fadeIn()', 400);
+		document.getElementById("slide").style.marginLeft = ((600-Pics[place-1].width)/2)+"px";
+		document.getElementById("slide").style.marginRight = ((600-Pics[place-1].width)/2)+"px";
+		setTimeout("fadeIn()", 200);
 	});
 }
 
@@ -59,6 +67,7 @@ function fadeIn(){
 		NextChange = setTimeout("fadeInAndOut();",3000);
 	});
 }
+
 
 
 changeShow(Home);
