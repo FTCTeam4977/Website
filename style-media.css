@@ -25,7 +25,7 @@ table{
 
 #container{
 	width:1000px;
-	height:760px;
+	height:980px;
 	margin:auto;
 	position:relative;
 	background:url("images/grad_container.jpg");
@@ -111,9 +111,18 @@ table{
 	opacity:.40;
 }
 
+#Browser{
+	width:1000px;
+	height:200px;
+	position:absolute;
+	top:600px;
+	background-color:#000;
+	opacity:.20;
+}
+
 #Info{
 	position:absolute;
-	top:580px;
+	top:800px;
 	width:1000px;
 }
 

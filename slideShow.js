@@ -21,12 +21,6 @@ function ClearShow(){
 	clearTimeout(NextChange);
 }
 
-function doResize()
-{
-	alert("hi");
-
-}
-
 function change(){
 	if(!display){
 		display = new Image();
@@ -67,7 +61,5 @@ function fadeIn(){
 		NextChange = setTimeout("fadeInAndOut();",3000);
 	});
 }
-
-
 
 changeShow(Home);
