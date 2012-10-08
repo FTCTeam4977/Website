@@ -1,6 +1,5 @@
 CurrentDir = "./";
 function GetDirContent(dir){
-	alert("dir="+CurrentDir+"/"+dir);
 	$.ajax({
 			url:"media/getDir.php",
 				type:"post",
