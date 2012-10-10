@@ -1,5 +1,6 @@
 var CurrentDir = "./";
 var DisplayPath = "";
+
 function GetDirContent(dir){
 	$.ajax({
 			url:"media/getDir.php",
@@ -22,6 +23,7 @@ function LinkContent(dir){
 			});
 }
 
+
 function ClickLink(link, inner){
 	return "<a onclick=\"" + link + "\">" + inner + "</a>";
 }
@@ -37,5 +39,7 @@ function Browser(content){
 		Path = Path + Folders[i] + "/";
 		DisplayPath = DisplayPath + ClickLink("LinkContent('" + Path + "')", Folders[i] + "/");
 	}
-	$("#Browser").html( ClickLink("LinkContent('.')","media//:") + DisplayPath +" " + ClickLink("GetDirContent('..')", "Go back") + "<br>" + data[1]);
+
+	$("#Path").html(ClickLink("LinkContent('.')","media//:") + DisplayPath +" " +( DisplayDir[1] != "" ? ClickLink("GetDirContent('..')", "Go back"):""));
+	$("#Browser").html( data[1]);
 }

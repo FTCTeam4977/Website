@@ -123,11 +123,27 @@ table{
 	overflow:scroll;
 }
 
+#Path{
+	width:1000px;
+	height:200px;
+	position:absolute;
+	top:0px;
+	color:white;
+}
+
+#MediaArea{
+	width:1000px;
+	height:200px;
+	position:absolute;
+	top:580px;
+	color:white;
+}
+
 #Browser{
 	width:1000px;
 	height:200px;
 	position:absolute;
-	top:600px;
+	top:45px;
 	color:white;
 }
 
@@ -135,6 +151,15 @@ table{
 	margin:auto;
 	display:block;
 	margin-top:50px;
+}
+
+#Browser a{
+	margin-left:50px;
+	width:200px;
+	height:150px;
+	display:block;
+	background-color:#FFF;
+	float:left;
 }
 
 #Info{
