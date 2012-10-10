@@ -140,3 +140,13 @@ table{
 	color:#FFF;
 	font-family:"Source Sans Pro";
 }
+
+#Paragraph{
+	width:765px;
+	height:411px;
+	position:absolute;
+	top:163px;
+	right:0;
+	background-color:#000;
+	opacity:.40;
+}
