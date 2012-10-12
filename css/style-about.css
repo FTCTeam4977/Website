@@ -26,7 +26,7 @@ table{
 
 #container{
 	width:1000px;
-	height:760px;
+	height:860px;
 	margin:auto;
 	position:relative;
 	background:url("../images/grad_container.jpg");
@@ -114,7 +114,7 @@ table{
 
 #Info{
 	position:absolute;
-	top:580px;
+	top:680px;
 	width:1000px;
 }
 
@@ -139,4 +139,15 @@ table{
 	margin:auto;
 	color:#FFF;
 	font-family:"Source Sans Pro";
+}
+
+#Paragraph{
+	margin-right:2.75px;
+	width:765px;
+	height:514px;
+	position:absolute;
+	top:163px;
+	right:0;
+	background-color:#000;
+	opacity:.40;
 }
