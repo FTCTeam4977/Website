@@ -30,7 +30,7 @@ function ClickLink(link, inner){
 
 function UpdatePic(pic){
 	var Src = "media" + DisplayDir[1] + "/" + pic;
-	$("#photoArea").html("<img id=\"Image\" alt=\"An ERROR has accord.\" src=\"" + Src + "\" >");
+	$("#photoArea").html("<img id=\"Image\" alt=\"An ERROR has occurred.\" src=\"" + Src + "\" >");
 	document.getElementById("Image").style.marginLeft = ((600-document.getElementById("Image").width)/2)+"px";
 	document.getElementById("Image").style.marginRight = ((600-document.getElementById("Image").width)/2)+"px";
 }
