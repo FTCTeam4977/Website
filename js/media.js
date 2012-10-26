@@ -51,7 +51,7 @@ function Browser(content){
 	for(i=1; i<Files.length;i++){
 		FileName = Files[i].split(".");
 		if(FileName[1] == null || FileName[1] == "png" || FileName[1] == "jpg" || FileName[1] == "gif")
-			DisplayFile = DisplayFile + "<a onclick=\""+ (FileName[1] == null? "GetDirContent":"UpdatePic") + "('" + Files[i] + "')\"><img height=\"130\" src=\"" + (FileName[1] == null ? "images/Folder.png":"media" + DisplayDir[1] + "/" + Files[i]) + "\" alt=\"" + Files[i] + "\"><p>"+ FileName[0] +"</p></a>";
+			DisplayFile = DisplayFile + "<a onclick=\""+ (FileName[1] == null? "GetDirContent":"UpdatePic") + "('" + Files[i] + "')\"><img height=\"120\" src=\"" + (FileName[1] == null ? "images/Folder.png":"media" + DisplayDir[1] + "/" + Files[i]) + "\" alt=\"" + Files[i] + "\"><p>"+ FileName[0] +"</p></a>";
 	}
 	$("#Path").html(( DisplayDir[1] != "" ? ClickLink("GetDirContent('..')", "<img alt=\"back\" src=\"images/Back.png\">"):"<a><img alt=\"back\" src=\"images/HiddenBack.png\"></a>") + ClickLink("LinkContent('.')","<p class=\"Path\"> media//:<p>") + DisplayPath);
 	$("#Browser").html(DisplayFile);
