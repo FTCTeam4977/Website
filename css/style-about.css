@@ -8,7 +8,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 p{
-	font-size:20px;
+	font-size:18px;
 }
 
 a{
@@ -26,7 +26,7 @@ table{
 
 #container{
 	width:1000px;
-	height:860px;
+	height:660px;
 	margin:auto;
 	position:relative;
 	background:url("../images/grad_container.jpg");
@@ -114,7 +114,7 @@ table{
 
 #Info{
 	position:absolute;
-	top:680px;
+	top:531px;
 	width:1000px;
 }
 
@@ -142,12 +142,26 @@ table{
 }
 
 #Paragraph{
+	color:#FFF;
 	margin-right:2.75px;
 	width:765px;
-	height:514px;
+	height:366px;
 	position:absolute;
-	top:163px;
+	bottom:192px;
 	right:0;
 	background-color:#000;
 	opacity:.40;
+}
+
+.paragraphTitle{
+	margin-left:10px;
+	margin-top:10px;
+	font-size:22px;
+	font-weight:900;
+}
+
+.subParagraph{
+	margin-right: 10px;
+	margin-left: 20px;
+	margin-top: 0px;
 }
