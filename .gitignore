@@ -1,4 +1,8 @@
 
 .DS_Store
-
 *.tmproj
+normal/
+users.db
+blog
+media
+Text
