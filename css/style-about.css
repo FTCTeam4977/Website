@@ -13,7 +13,7 @@ p{
 
 a{
 	color:#cfcfcf;
-	text-decoration:underline 
+	text-decoration:none;
 }
 
 table{
@@ -26,7 +26,7 @@ table{
 
 #container{
 	width:1000px;
-	height:660px;
+	height:720px;
 	margin:auto;
 	position:relative;
 	background:url("../images/grad_container.jpg");
@@ -151,6 +151,10 @@ table{
 	right:0;
 	background-color:#000;
 	opacity:.40;
+}
+
+#Paragraph a{
+text-decoration:underline;
 }
 
 .paragraphTitle{
