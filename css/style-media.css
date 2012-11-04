@@ -1,61 +1,13 @@
-body{
-	margin:10px 0 0 0;
-	background-color:#000;
-}
+@import url("base.css");
 
-p,h1,h2,h3,h4,h5,h6{
-	margin:0;
-}
-
-p{
-	font-size:20px;
-	font-family:"Source Sans Pro";
-}
-
-a{
-	color:#cfcfcf;
-	text-decoration:none; 
-}
-
-table{
-	border:#808080 solid 3px;
-}
-
-.active{
-	color:#686868;
-}
 
 #container{
-	width:1000px;
 	height:960px;
-	margin:auto;
-	position:relative;
-	background:url("../images/grad_container.jpg");
-	background-repeat:repeat-x;
-	background-color:#555555;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	
 }
 
-#logo_First{
-	position:absolute;
-	top:5px;
-	left:50px;
-	z-index:2;
-}
-
-#logo_Main{
-	display:block;
-	margin:auto;
-	width:274px;
-}
-
-#logo_FTC{
-	position:absolute;
-	top:5px;
-	right:50px;
-	z-index:2;
+#logo_Loading{
+	width:128px;
+	height:128px;
 }
 
 #photoArea{
@@ -68,49 +20,6 @@ table{
 	margin:auto;
 	overflow:hidden;
 	z-index:2;
-}
-
-.slide{
-	height:400px;
-	margin:auto;
-}
-
-#SideBar{
-	margin-top:3px;
-	width:230px;
-	height:40px;
-	position:absolute;
-	top:160px;
-	left:0;
-	color:#FFF;
-	border-radius:25px;
-	-moz-border-radius:25px;
-}
-
-#SideBar .upperLink{
-	padding:3px 0 0 5px;
-	margin:0 0 2px 0;
-	font-family:"Source Sans Pro";
-	background-color:#000;
-	opacity:.40;
-}
-
-#SideBar .upperLink p{
-	font-size:33px;
-}
-
-#SideBar .upperLink:hover{
-	opacity:.70;
-}
-
-#QuickInfo{
-	width:200px;
-	height:366px;
-	position:absolute;
-	top:163px;
-	right:0;
-	background-color:#000;
-	opacity:.40;
 }
 
 #BrowserBack{
@@ -133,6 +42,7 @@ table{
 #Path a{
 	display:block;
 	float:left;
+	font-family:"Source Sans Pro";
 }
 
 #Path img{
@@ -162,6 +72,7 @@ table{
 	top:35px;
 	color:white;
 	text-align:center;
+	font-family:"Source Sans Pro";
 }
 
 #Browser img{
@@ -178,30 +89,5 @@ table{
 }
 
 #Info{
-	position:absolute;
 	top:780px;
-	width:1000px;
-}
-
-#PhotoInfo{
-	width:1000px;
-	height:190px;
-	display:block;
-	margin:auto;
-	background-color:#000;
-	opacity:.40;
-	text-align:center;
-}
-
-#PhotoInfo h1{
-	margin-top:20px;
-	color:#FFF;
-	font-family:"Source Sans Pro";
-}
-
-#PhotoInfo p{
-	width:700px;
-	margin:auto;
-	color:#FFF;
-	font-family:"Source Sans Pro";
 }
