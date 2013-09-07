@@ -1,0 +1,14 @@
+body{
+	padding-top: 60px;
+}
+
+.carousel-caption h1{
+	margin:0 0 5px;
+	color:#fff;
+}
+
+@media(max-width: 980px){
+	body{
+		padding-top: 0;
+	}
+}
