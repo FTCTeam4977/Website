@@ -78,7 +78,7 @@ class Event{
 		return $output;
 	}
 
-	public static function getCurrent($limit = -1, $order = EVENT_ASC){
+	public static function getUpcoming($limit = -1, $order = EVENT_ASC){
 		$output;
 		$dir = scandir(EVENT_LOCATION);
 		switch($order){
@@ -90,7 +90,7 @@ class Event{
 			asort($dir);
 			break;
 		}
-		$endOfDay = strtotime("today midnight");
+		$endOfDay = strtotime("midnight");
 		if($limit == -1){
 			foreach($dir as $file){
 				if($file != ".." && $file != "." && $file > $endOfDay)
