@@ -1,0 +1,10 @@
+{
+	"title":"Website is up",
+	"date":1323043200,
+	"time":{
+		"start":"1AM",
+		"end": "2PM"
+	},
+	"location":"Andrew's server",
+	"info":"This event marks the date the website was live."
+}
