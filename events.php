@@ -19,7 +19,7 @@ include_once("include.php");
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="../index.html">FTC Team 4977</a>
+					<a class="brand" href="index.html">FTC Team 4977</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li>
@@ -35,7 +35,7 @@ include_once("include.php");
 								<a href="robots.html">Robots</a>
 							</li>
 							<li class="">
-								<a href="about-us.php">About Us</a>
+								<a href="about-us.html">About Us</a>
 							</li>
 						</ul>
 					</div>
