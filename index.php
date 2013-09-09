@@ -48,21 +48,21 @@ include_once("include.php");
 					<div id="mainCarousel" class="carousel slide" data-interval="5000">
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="Resources/Images/slide-01.png" alt="">
+								<img src="resources/images/slide-01.png" alt="">
 								<div class="carousel-caption">
 									<h1>Hey!</h1>
 									<p class="lead">Welcome to LAN Lords website!</p>
 								</div>
 							</div>
 							<div class="item">
-								<img src="Resources/Images/slide-02.png" alt="">
+								<img src="resources/images/slide-02.png" alt="">
 								<div class="carousel-caption">
 									<h1>The LANLords</h1>
 									<p class="lead"></p>
 								</div>
 							</div>
 							<div class="item">
-								<img src="./Resources/Images/GitHubBanner.png" alt="">
+								<img src="resources/images/GitHubBanner.png" alt="">
 								<div class="carousel-caption">
 									<h1>Codes!</h1>
 									<p class="lead">Check out all of our coding projects at <a href="http://github.com/FTCTeam4977">GitHub</a>.</p>
