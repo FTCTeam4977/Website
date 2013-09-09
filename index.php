@@ -19,7 +19,7 @@ include_once("include.php");
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="../index.php">FTC Team 4977</a>
+					<a class="brand" href="index.php">FTC Team 4977</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li class="active">
@@ -47,18 +47,18 @@ include_once("include.php");
 				<div class="span8">
 					<div id="mainCarousel" class="carousel slide" data-interval="5000">
 						<div class="carousel-inner">
-							<div class="item active">
+							<div class="item">
 								<img src="resources/images/slide-01.png" alt="">
 								<div class="carousel-caption">
-									<h1>Hey!</h1>
-									<p class="lead">Welcome to LAN Lords website!</p>
+									<h1>Robots!</h1>
+									<p class="lead">The Black Box in action.</p>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item active">
 								<img src="resources/images/slide-02.png" alt="">
 								<div class="carousel-caption">
 									<h1>The LANLords</h1>
-									<p class="lead"></p>
+									<p class="lead">Gotta love thoughs hats!</p>
 								</div>
 							</div>
 							<div class="item">
