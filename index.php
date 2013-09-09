@@ -1,3 +1,6 @@
+<?php
+include_once("include.php");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,7 +19,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="../index.html">FTC Team 4977</a>
+					<a class="brand" href="../index.php">FTC Team 4977</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li class="active">
@@ -78,9 +81,20 @@
 					</div>
 					<div class="row-fluid">
 						<h2>Events</h2>
-						<ul>
-							<li>No events currenty listed. Please check again later.</li>
-						</ul>
+						<?php
+						$events = Event::getUpcoming(4);
+						if(count($events) < 1){ ?>
+							<p>No upcoming events listed.</p>
+						<?php	
+						}
+						else{ ?>
+							<ul>
+								<?php
+								foreach($events as $event){ ?>
+								<li><?php echo $event->getValue(EVENT_DATA_TITLE)?> - <b><?php echo $event->getDate()?></b></li>
+								<?php } ?>
+							</ul>
+						<?php }?>
 						<p>Here you can find more information about events we will be attending. </p>
 						<p><a class="btn" href="events.php">View Events &raquo;</a></p>
 					</div>
