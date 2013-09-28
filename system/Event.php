@@ -6,8 +6,8 @@ class Event{
 		$file = file_get_contents($name);
 		$this->json = json_decode($file, true);
 		$date = $this->json[EVENT_DATA_DATE];
-		$beginOfDay = strtotime("midnight");
-		$endOfDay = strtotime("tomorrow midnight");
+		$beginOfDay = strtotime("midnight UTC");
+		$endOfDay = strtotime("tomorrow midnight UTC");
 		if($date > $endOfDay)
 			$this->status = EVENT_STATUS_NEW;
 		else if($date >= $beginOfDay && $date <= $endOfDay)
