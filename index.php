@@ -44,7 +44,7 @@ include_once("include.php");
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="span8">
+				<div class="span7">
 					<div id="mainCarousel" class="carousel slide" data-interval="5000">
 						<div class="carousel-inner">
 							<div class="item">
@@ -73,7 +73,7 @@ include_once("include.php");
 						<a class="right carousel-control" href="#mainCarousel" data-slide="next">&rsaquo;</a>
 					</div>
 				</div>
-				<div class="span4">
+				<div class="span5">
 					<div class="row-fluid">
 						<h2>About Us</h2>
 						<p class="lead">We are a Lancaster, PA based FTC team with members from Penn Manor and Hempfield.</p>
