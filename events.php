@@ -69,7 +69,7 @@ include_once("include.php");
 							<b><?php echo $event->getDate()?></b><br>
 							Starts: <i><?php echo $event->getValue(EVENT_DATA_START)?></i>
 							Ends: <i><?php echo $event->getValue(EVENT_DATA_END)?></i><br>
-							Location: <i><?php echo $event->getValue(EVENT_DATA_LOCATION)?></i>
+							Location: <a target="_bank" href="https://maps.google.com/?q=<?php echo $event->getValue(EVENT_DATA_LOCATION)?>"><i><?php echo $event->getValue(EVENT_DATA_LOCATION)?></i></a>
 						</address>
 						<p class="lead"><?php echo $event->getValue(EVENT_DATA_INFO)?></p>
 					</div>
