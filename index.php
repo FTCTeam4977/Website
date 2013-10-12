@@ -58,7 +58,7 @@ include_once("include.php");
 								<img src="resources/images/slide-02.png" alt="">
 								<div class="carousel-caption">
 									<h1>The LANLords</h1>
-									<p class="lead">Gotta love thoughs hats!</p>
+									<p class="lead">Gotta love those hats!</p>
 								</div>
 							</div>
 							<div class="item">
@@ -103,12 +103,12 @@ include_once("include.php");
 			<div class="row-fluid">
 				<div class="span4" id="Media">
 					<h2>Media</h2>
-					<p>Here's all of our media from different competitions, events, and demonstrations that we've been to. Check out our photos from our most recent experiences at the world competition in St. Louis, Mo!</p>
+					<p>Here's all of our media from different competitions, events, and demonstrations that we've been to. Check out our photos from our most recent experiences at the world competition in St. Louis!</p>
 					<p><a class="btn" href="media.html">View media &raquo;</a></p>
 				</div>
 				<div class="span4" id="Robots">
 					<h2>Robots</h2>
-					<p>Read about our past robots, the compatitons that they played in, and the their performances.</p>
+					<p>Read about our past robots, the competitions that they played in, and their performances.</p>
 					<p><a class="btn" href="robots.html">View robots &raquo;</a></p>
 				</div>
 				<div class="span4" id="Social">
