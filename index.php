@@ -47,6 +47,13 @@ include_once("include.php");
 				<div class="span7">
 					<div id="mainCarousel" class="carousel slide" data-interval="5000">
 						<div class="carousel-inner">
+							<div class="item active">
+								<img src="resources/images/slide-03.png" alt="">
+								<div class="carousel-caption">
+									<h1>Winning Alliance!</h1>
+									<p class="lead">Smokin' Motors paired up with the LANLords @Oxford</p>
+								</div>
+							</div>
 							<div class="item">
 								<img src="resources/images/slide-01.png" alt="">
 								<div class="carousel-caption">
@@ -54,7 +61,7 @@ include_once("include.php");
 									<p class="lead">The Black Box in action.</p>
 								</div>
 							</div>
-							<div class="item active">
+							<div class="item">
 								<img src="resources/images/slide-02.png" alt="">
 								<div class="carousel-caption">
 									<h1>The LANLords</h1>
