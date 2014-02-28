@@ -37,6 +37,9 @@ include_once("include.php");
 							<li class="">
 								<a href="about-us.html">About Us</a>
 							</li>
+							<li class="">
+								<a href="https://github.com/FTCTeam4977/">Code</a>
+							</li>
 						</ul>
 					</div>
 				</div>
